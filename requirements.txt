@@ -7,4 +7,5 @@ xgboost
 scikit-learn
 dill
 Flask
+pickle
 #-e .
