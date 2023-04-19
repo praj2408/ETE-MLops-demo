@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insurance Price Prediction web application</title>
+    <link rel="stylesheet" href="/static/css/main.css">
+    <link rel="icon" href="/static/img/insurance-logo.png">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="/static/img/insurance-logo.png" alt="website logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="https://github.com/praj2408/Insurance-Price-Prediction">Github</a></li>
+                    <li><a href="https://nixhantme.herokuapp.com/">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <div class="section-body">
+        <div class="insurance-detail">
+            <h2>Insurance price prediction</h2>
+
+            <form action="{{url_for('predict')}}" method="POST">
+                <input type="text" name="age" id="" placeholder="age between 18 to 64" required="required">
+                <select name="sex" id="" class="custom-style" >
+                    <option value="1">Male</option>
+                    <option value="0">Female</option>
+                </select>
+                <input type="text" name="bmi" id="" placeholder="bmi" required="required">
+                <input type="text" name="children" id="" placeholder="children" required="required">
+                <select name="smoker" id="" class="custom-style">
+                    <option value="1">Yes</option>
+                    <option value="0">No</option>
+                </select>
+                
+                <select name="region" id="" class="custom-style">
+                    <option value="0">SouthWest</option>
+                    <option value="1">SouthEast</option>
+                    <option value="2">NorthWest</option>
+                    <option value="3">NorthEast</option>
+                </select>
+                <input type="submit" value="Predict">
+
+            </form>
+            
+            <div class="response-me">
+                <h3 style="font-size: 2.2rem;">Predicted Premium</h3>
+
+                    <h1 style="font-size: 2.2rem;color: rgb(184, 6, 65); margin-bottom: 6px;">{{response_int}}</h1>
+                    <h1 style="font-size:  2.2rem; color: rgb(9, 154, 31);">{{response}}</h1>
+
+            </div>
+
+        </div>
+
+
+        <div class="img-insure">
+            <img src="/static/img/home.png" alt="">
+        </div>
+
+    </div>
+
+
+</body>
+</html>
