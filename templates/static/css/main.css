@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Raleway', sans-serif;
+   background-color: #f7f9fa;
+    
+}
+
+/* Nav Bar */
+.container img{
+    width: 50px;
+    height: auto;
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    height: 7vh;
+    
+}
+a{
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.7rem;
+    color:rgb(9, 13, 121);
+}
+a:hover{
+    color: rgb(109, 109, 247);
+}
+ul{
+    display: flex;
+}
+ul li{
+    list-style: none;
+    margin: 3.4rem;
+}
+
+/* Body */
+.section-body{
+    display: flex;
+    justify-content: center;
+}
+h2{
+    font-size: 3rem;
+    font-weight: 800;
+    color:rgb(2, 2, 122);
+    line-height: 34px;
+    margin-bottom: 25px;
+}
+input[type=number]{
+    width: 100%;
+    padding:12px 40px;
+    margin: 1.2rem 0;
+    display: block;
+    border:1px solid #ccc;
+    font-size: 1.7rem;
+    border-radius: 4px;
+}
+select{
+    width: 100%;
+    padding:12px 40px;
+    margin: 1.2rem 0;
+    display: block;
+    border:1px solid #ccc;
+    font-size: 1.7rem;
+    border-radius: 4px;
+}
+input::placeholder{
+    font-size: 1.7rem;
+    color:rgb(116, 115, 115);
+   
+}
+option{
+    font-size: 1.6rem;
+}
+
+.form-label{
+    font-size: 1.7rem;
+    margin-bottom: 0px;
+}
+.insurance-detail{
+    width: 30%;
+    margin-right: 13%;
+    margin-top: 1%;
+}
+
+.img-insure{
+    margin-top: 3%;
+}
+
+
+
+/* Premium button*/ 
+input[type=submit]{
+    width: 50%;
+    background-color: #060570;
+    color:white;
+    padding: 14px 20px;
+    margin:8px 0;
+    border:none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.3rem;
+}
+
+/* Predicted Premium*/
+.response-me{
+    width: 30%;
+    padding: 30px 50px;
+    font-size: 2.2rem;
+    color: #060570;
+    background-color: rgb(196, 220, 252);
+    margin-top: 2rem;
+    margin-left: 15.5%;
+    border-radius: 20%;
+}
+
+
+
+
+@media screen and (max-width:1118px){
+
+    .section-body{
+        display: block;
+        justify-content: center;
+    }
+    .insurance-detail{
+        width: 70%;
+        margin-left: 15%;
+        margin-top: 6%;
+    }
+    .container img{
+        width: 25px;
+    }
+    .container{
+        width: 100%;
+    }
+    input[type=submit]{
+        width: 100%;
+        
+    
+    }
+    a{
+        font-size: 1.4rem;
+    }
+    h2{
+        font-size: 2rem;
+    }
+.response-me{
+    width: 100%;
+}
+}

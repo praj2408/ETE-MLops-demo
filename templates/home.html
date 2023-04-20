@@ -23,6 +23,8 @@
             </nav>
         </div>
     </header>
+
+    
     
     <div class="section-body">
         <div class="insurance-detail">
@@ -30,7 +32,7 @@
     <form action="{{ url_for('predict_datapoint')}}" method="post">
     <div class="mb-3">
         <label class="form-label">Age</label>
-        <input  type="number" name="bmi" placeholder="Enter your age" min="16" required>
+        <input  type="number" name="bmi" placeholder="Enter your Age" min="16"  required>
     </div>
 
     <div class="mb-3">
@@ -44,7 +46,7 @@
 
     <div class="mb-3">
         <label class="form-label">BMI</label>
-        <input  type="number" name="bmi" placeholder="Enter your bmi" required>
+        <input  type="number" name="bmi" placeholder="Enter your BMI" step="0.1" required>
     </div>
 
     <div class="mb-3">
@@ -55,14 +57,14 @@
     <div class="mb-3">
         <label class="form-label">Smoker</label>
         <select class="custom-style" name="smoker" placeholder="Do you smoke?" required>
-            <option class="placeholder" selected disabled value="">Do you smoke?</option>
+            <option class="placeholder" selected disabled value="">Do you Smoke?</option>
             <option value="yes">Yes</option>
             <option value="no">No</option>
         </select>
     </div>
 
     <div class="mb-3">
-        <label class="">Region</label>
+        <label class="form-label">Region</label>
         <select class="custom-style" name="region" placeholder="Select your region" required>
             <option class="placeholder" selected disabled value="">Select your region</option>
             <option value="southwest">SouthWest</option>
