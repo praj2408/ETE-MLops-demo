@@ -8,4 +8,6 @@ scikit-learn
 dill
 Flask
 pickle
+python==3.8
+gunicorn
 #-e .
