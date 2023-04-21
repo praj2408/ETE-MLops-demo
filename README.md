@@ -5,6 +5,7 @@ This project aims to predict the insurance premium price for individuals based o
 
 ## Website Link
 https://
+
 ![](https://github.com/praj2408/Insurance-Premium-Prediction-cicd/blob/main/static/img/Insurance%20Premium%20Prediction.gif)
 ### Dataset
 [Dataset](https://www.kaggle.com/noordeen/insurance-premium-prediction) is provided by Ineuron
